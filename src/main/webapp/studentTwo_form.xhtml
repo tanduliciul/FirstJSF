@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="Hello, world"/>
+</f:view>
+<h:form>
+    First Name: <h:inputText id="firstName" value="#{studentTwo.firstName}"/><br/><br/>
+    Last Name: <h:inputText id="lastName" value="#{studentTwo.lastName}"/><br/><br/>
+    Country: <h:inputText id="country" value="#{studentTwo.country}"/><br/><br/>
+
+    <h:commandButton value="Submit" action="student_response">
+        <f:selectItem itemValue="Romania" itemLabel="Romania" ></f:selectItem>
+        <f:selectItem itemValue="Germania" itemLabel="Germania" ></f:selectItem>
+        <f:selectItem itemValue="Anglia" itemLabel="Anglia" ></f:selectItem>
+    </h:commandButton>
+</h:form>
+</html>
